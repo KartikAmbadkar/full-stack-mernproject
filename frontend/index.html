@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>IMovies</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800&family=Instrument+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="top"><div class="wrap bar">
+  <button class="brand" data-go="browse" aria-label="IMovies home">I<span>Movies</span></button>
+  <nav aria-label="Main">
+    <button data-go="browse" id="nav-browse">Now showing</button>
+    <button data-go="bookings" id="nav-bookings">My bookings</button>
+    <button data-go="admin" id="nav-admin" hidden>Admin</button>
+  </nav>
+  <div id="userbox"></div>
+</div></header>
+<main class="wrap" id="main"></main>
+<footer><div class="wrap">IMovies is the front end of a MERN cinema booking system. Films, theatres and payments here are sample data, and bookings are kept in this browser only.</div></footer>
+<div id="authlayer" hidden></div>
+<div id="toasts" aria-live="polite"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
